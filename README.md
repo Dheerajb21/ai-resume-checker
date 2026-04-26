@@ -12,10 +12,17 @@ AI Resume Checker is an intelligent hiring and learning agent designed to assess
 
 ## 🛠️ Tech Stack
 
-*   **Frontend Framework**: React
+*   **Frontend Framework**: Next.js (App Router) & React
 *   **Styling**: Tailwind CSS (v4) & Lucide React (Icons)
 *   **AI Engine**: Google Gemini API (`gemini-3.1-flash-lite-preview`)
 *   **State Management**: React Hooks (useState, useEffect, useRef)
+
+## 🏗️ Architecture (Secure API)
+
+This project uses the **Next.js App Router** to ensure that sensitive API credentials are kept secure.
+
+*   **Client UI (`src/app/page.jsx`)**: The interactive technical interview chat and dashboard run entirely on the client side (browser). 
+*   **Server Proxy (`src/app/api/gemini/route.js`)**: A secure backend API route that securely stores the `GEMINI_API_KEY` using server-side environment variables. It receives generation requests from the client, communicates with the Google Gemini API, and securely returns the result back to the frontend, preventing API key exposure to the user.
 
 ## 📋 Getting Started
 
@@ -42,7 +49,7 @@ AI Resume Checker is an intelligent hiring and learning agent designed to assess
     npm run dev
     ```
 
-4.  **Open in Browser:** Navigate to the `localhost` URL provided by Vite to interact with SkillProbe AI.
+4.  **Open in Browser:** Navigate to `http://localhost:3000` to interact with the application.
 
 ## 💡 How it Works
 
