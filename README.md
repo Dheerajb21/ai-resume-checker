@@ -12,9 +12,9 @@ AI Resume Checker is an intelligent hiring and learning agent designed to assess
 
 ## 🛠️ Tech Stack
 
-*   **Frontend Framework**: React 18 (Vite)
+*   **Frontend Framework**: React
 *   **Styling**: Tailwind CSS (v4) & Lucide React (Icons)
-*   **AI Engine**: Google Gemini API (`gemini-2.0-flash-lite-preview`)
+*   **AI Engine**: Google Gemini API (`gemini-3.1-flash-lite-preview`)
 *   **State Management**: React Hooks (useState, useEffect, useRef)
 
 ## 📋 Getting Started
@@ -33,8 +33,8 @@ AI Resume Checker is an intelligent hiring and learning agent designed to assess
 2.  **Environment Setup:**
     Create a `.env` file in the root of the project and add your Gemini API Key:
     ```env
-    VITE_GEMINI_API_KEY="YOUR_GOOGLE_AI_STUDIO_KEY"
-    VITE_GEMINI_MODEL="gemini-2.0-flash-lite-preview"
+    GEMINI_API_KEY="YOUR_GOOGLE_AI_STUDIO_KEY"
+    GEMINI_MODEL="gemini-3.1-flash-lite-preview"
     ```
 
 3.  **Run the Development Server:**
